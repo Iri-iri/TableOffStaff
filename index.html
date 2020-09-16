@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="form">
+    <div class="input_wrapper">
+    <input id="name" type="text" placeholder="Имя"><br>
+    <input id="year" type="text" placeholder="Год в цифрах"><br>
+    <input id="date" type="date"><br>
+    <input id="sum" type="number" placeholder="$"><br>
+    </div>
+    <button id="add">Добавить сотрудника</button>
+  </form>
+  <p>Количество сотрудников:<span id="number"></span></p>
+  <p>Сумма $:<span id="sumAll"></span></p>
+  <table id="table">
+    <tr>
+      <th></th>
+      <th>Имя</th>
+      <th>Год рождения <span id="upYear">&uarr;</span> <span id="downYear">&darr;</span></th>
+      <th>Дата приема на работу <span id="upDate">&uarr;</span> <span id="downDate">&darr;</span></th>
+      <th>$</th>
+      <tbody id="tbody"></tbody>
+    </tr>
+  </table>
+  <button id="removeBtn">Уволить</button>
+  <button id="sumBtn">Сумма</button>
+  <script src="index.js"></script>
+</body>
+
+</html>
