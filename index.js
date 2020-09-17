@@ -99,7 +99,7 @@ downYear.addEventListener("click", () => {
 
 upDate.addEventListener("click", () => { 
   arr.sort(function (a, b) {
-    var dateA=new Date(a.dateValue), dateB=new Date(b.dateValue)
+    const dateA=new Date(a.dateValue), dateB=new Date(b.dateValue)
         return dateA- dateB
   });
 
@@ -108,11 +108,13 @@ upDate.addEventListener("click", () => {
 
 downDate.addEventListener("click", () => {
   arr.sort(function (a, b) {
-    var dateA = new Date(a.dateValue), dateB = new Date(b.dateValue)
+    const dateA = new Date(a.dateValue), dateB = new Date(b.dateValue)
     return dateB - dateA
   });
 
   displayTable();
 });
+
+
 
 
